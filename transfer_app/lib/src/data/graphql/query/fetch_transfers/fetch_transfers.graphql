@@ -1,0 +1,8 @@
+query getAllTransfers {
+  getAllTransfers {
+    id
+    amount
+    senderName
+    createdAt
+  }
+}
