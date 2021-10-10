@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/env"
+  ],
+  "plugins": [
+    "babel-plugin-inline-import"
+  ],
+  "env": {
+    "development": {
+      "sourceMaps": "inline",
+      "retainLines": true
+    }
+  }
+}

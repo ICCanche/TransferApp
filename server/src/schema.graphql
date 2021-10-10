@@ -1,0 +1,28 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Transfer {
+    id: ID!
+    amount: Float!
+    senderName: String!
+    createdAt: String!
+}
+
+input TransferInput {
+    amount: Float!
+    senderName: String!
+}
+
+type TransferResponse {
+    success: Boolean!
+}
+
+type Query {
+    getAllTransfers: [Transfer!]!
+}
+
+type Mutation {
+    transfer(input: TransferInput!): TransferResponse!
+}
