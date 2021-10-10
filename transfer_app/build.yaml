@@ -1,0 +1,10 @@
+targets:
+  $default:
+    builders:
+      artemis:
+        options:
+          schema_mapping:
+            - schema: lib/schema.graphql
+              queries_glob: lib/src/data/graphql/query/fetch_transfers/fetch_transfers.graphql
+              output: lib/src/data/graphql/query/fetch_transfers/fetch_transfers.dart
+              naming_scheme: simple
